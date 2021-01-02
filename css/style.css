@@ -1,0 +1,29 @@
+body {
+    font-family: acumin-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+}
+
+#navbar h1{
+    font-size: 64px;
+    color: #32353D;
+}
+
+#navbar h4, #navbar a {
+    font-size: 24px;
+    color: #716B73;
+}
+
+#navbar a {
+    list-style: none;
+    text-decoration: none;
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: flex-end;
+}
