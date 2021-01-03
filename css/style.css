@@ -62,13 +62,55 @@ ul {
 /*Portfolio Bereich startet hier*/
 #portfolio {
     background-color: #f3ebe7;
-    padding: 64px 32px;
+    padding-bottom: 64px;
+    
 }
 
+#top-images, #bot-images {
+    display: flex;
+    padding: 0px 0px;
+    align-items: flex-start;
+}
 
+.portfolio-images {
+    /*Die schwarzen Bilder sind nicht richtig zentriert. Fullscreen und kleiner. Responsiveness?*/
+    width: 30%;
+    padding: 0px;
+}
+/*Font nicht in 500 verfügbar.*/
+#portfolio-heading {
+    text-align: center;
+    color: #716b73;
+    font-weight: 600;
+    letter-spacing: 0.0525em;
+    font-size: 24px;
+    padding: 64px 0px;
+}
 
+/*die richtigen Abstände bei den Portfolio Bildern mit margin. Vielleicht gibt es bessere Lösung*/
+#portfolio-image-1 {
+    margin: 0px 16px 16px 32px;
+}
 
+#portfolio-image-2 {
+    margin: 0px 16px 16px 16px;
+}
 
+#portfolio-image-3 {
+    margin: 0px 32px 16px 16px;
+}
+
+#portfolio-image-4 {
+    margin: 16px 16px 0px 32px;
+}
+
+#portfolio-image-5 {
+    margin: 16px 16px 0px 16px;
+}
+
+#portfolio-image-6 {
+    margin: 16px 32px 0px 16px;
+}
 
 
 
