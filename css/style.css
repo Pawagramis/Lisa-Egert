@@ -4,18 +4,20 @@ body {
     font-style: normal;
 }
 
+/*Navbar Bereich startet*/
+
 ul {
     list-style-type: none;
 }
 
 #navbar h1{
-    font-size: 48px;
+    font-size: 40px;
     color: #32353D;
     font-weight: normal;
 }
 
 #navbar h4, #navbar a {
-    font-size: 19px;
+    font-size: 16px;
     color: #716B73;
     font-weight: lighter;
 }
@@ -31,6 +33,7 @@ ul {
     justify-content: flex-end;
     width: 50%;
     padding: 0px;
+    /*Abstand zwischen allen Items und dem Rand gleichmäßig 32px*/
     margin: 8px 16px 8px 8px;
     align-items: center;
 }
@@ -44,12 +47,40 @@ ul {
     flex-flow: column;
     width: 50%;
 }
-
-#logo h1, #logo h4 {
-    margin: 8px 8px;
+/*unterschiedliche margin left um "Kommunikationsdesign" mit Lisa Egert zu zentrieren*/
+#logo h1 {
+    margin: 24px 0px 4px 32px;
+}
+#logo h4 {
+    margin: 4px 0px 32px 38px;
 }
 
 .navbar-items {
     padding: 16px;
-
 }
+
+/*Portfolio Bereich startet hier*/
+#portfolio {
+    background-color: #f3ebe7;
+    padding: 64px 32px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
