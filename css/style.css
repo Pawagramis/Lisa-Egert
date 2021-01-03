@@ -9,21 +9,47 @@ ul {
 }
 
 #navbar h1{
-    font-size: 64px;
+    font-size: 48px;
     color: #32353D;
+    font-weight: normal;
 }
 
 #navbar h4, #navbar a {
-    font-size: 24px;
+    font-size: 19px;
     color: #716B73;
+    font-weight: lighter;
 }
 
 #navbar a {
     list-style: none;
     text-decoration: none;
 }
-
+/* Die Navbar, das Logo plus Untertitel und die navbar items sind jeweils einzelne flex container*/
+/* Das Logo und die Navbar Items sollen jeweils 50% der Navbar einnehmen */
 #navbar ul {
     display: flex;
     justify-content: flex-end;
+    width: 50%;
+    padding: 0px;
+    margin: 8px 16px 8px 8px;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+}
+
+#logo {
+    display: flex;
+    flex-flow: column;
+    width: 50%;
+}
+
+#logo h1, #logo h4 {
+    margin: 8px 8px;
+}
+
+.navbar-items {
+    padding: 16px;
+
 }
