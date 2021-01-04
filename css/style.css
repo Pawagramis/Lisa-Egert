@@ -163,7 +163,41 @@ ul {
     position: relative;
     right: 28px;
 }
+/*Über mich section beginnt hier*/
+#ueber-mich-heading {
+    margin: 0;
+    color:  #716b73;
+    padding-bottom: 32px;
+}
 
+#headshot-wrapper {
+    display: flex;
+}
+
+#paragraph-container {
+    display: flex;
+    width: 50%;
+    margin: 0px;
+    margin: 32px 150px 0px 140px;
+}
+
+#paragraph-container p {
+    color: #716b73;
+    margin: 0px;
+}
+
+#headshot-container {
+    display: flex;
+    width: 40%;
+    margin: 0px;  
+    justify-content: center; 
+}
+
+#headshot {
+    width: 55%;
+    height: auto;
+    align-self: center;
+}
 
 
 
