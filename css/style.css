@@ -63,6 +63,7 @@ ul {
 #portfolio {
     background-color: #f3ebe7;
     padding-bottom: 64px;
+    width: 100%;
     
 }
 
@@ -74,17 +75,19 @@ ul {
 
 .portfolio-images {
     /*Die schwarzen Bilder sind nicht richtig zentriert. Fullscreen und kleiner. Responsiveness?*/
-    width: 30%;
+    max-width: 30%;
     padding: 0px;
 }
 /*Font nicht in 500 verfügbar.*/
-#portfolio-heading {
+.section-heading {
     text-align: center;
-    color: #716b73;
     font-weight: 600;
     letter-spacing: 0.0525em;
     font-size: 24px;
     padding: 64px 0px;
+}
+#portfolio-heading {
+    color: #716b73;
 }
 
 /*die richtigen Abstände bei den Portfolio Bildern mit margin. Vielleicht gibt es bessere Lösung*/
@@ -111,6 +114,56 @@ ul {
 #portfolio-image-6 {
     margin: 16px 32px 0px 16px;
 }
+
+/*Hier startet der Leistungen Abschnitt*/
+
+#leistungen {
+    background-color: #d6bfb6;
+    padding-bottom: 64px;
+    width: 100%;
+}
+
+#leistungen-heading {
+    color: #ffffff;
+    margin: 0px;
+}
+
+.icon-groupcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-container {
+    display: flex;
+    background-color: white;
+    border-radius: 100%;
+    height: 140px;
+    width: 140px;
+    justify-content: center;
+    align-items: center;
+}
+
+.leistungen-icons {
+    color: #aa7f76;
+}
+
+.icon-underline {
+    color: #ffffff;
+    font-size: 19px;
+    margin-top: 48px;
+    font-weight: 400;
+    /*Justify Center und allign Center hat die Unterschriften nicht mit den Icons geligned. Deswegen position relative und 15 px nach links.*/
+    position: relative;
+    right: 15px;
+}
+
+#corporate-design-underline {
+    /*Die Corporate Design Unterschrift musste nochmal gesondert nach links bewegen, weil sie im Vergleich der anderen Unterschriften nicht zentriert war*/
+    position: relative;
+    right: 28px;
+}
+
 
 
 
