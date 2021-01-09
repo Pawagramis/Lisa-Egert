@@ -4,6 +4,13 @@ body {
     font-style: normal;
 }
 
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+
 /*Navbar Bereich startet*/
 
 ul {
@@ -22,10 +29,6 @@ ul {
     font-weight: lighter;
 }
 
-#navbar a {
-    list-style: none;
-    text-decoration: none;
-}
 /* Die Navbar, das Logo plus Untertitel und die navbar items sind jeweils einzelne flex container*/
 /* Das Logo und die Navbar Items sollen jeweils 50% der Navbar einnehmen */
 #navbar ul {
@@ -55,7 +58,7 @@ ul {
     margin: 4px 0px 32px 38px;
 }
 
-.navbar-items {
+#navbar, a {
     padding: 16px;
 }
 
@@ -167,23 +170,24 @@ ul {
 #ueber-mich-heading {
     margin: 0;
     color:  #716b73;
-    padding-bottom: 32px;
+    padding-bottom: 0px;
 }
 
 #headshot-wrapper {
     display: flex;
+    margin-bottom: 82px;
 }
 
 #paragraph-container {
     display: flex;
     width: 50%;
-    margin: 0px;
-    margin: 32px 150px 0px 140px;
+    margin: 48px 150px 0px 140px;
 }
 
 #paragraph-container p {
     color: #716b73;
     margin: 0px;
+    font-size: 14px;
 }
 
 #headshot-container {
@@ -198,6 +202,139 @@ ul {
     height: auto;
     align-self: center;
 }
+
+/*Kontakt-section beginns here*/
+#kontakt {
+    background-color: #f3ebe7;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+/*Flex Container, that wraps around the contact links and icons*/
+#kontakt-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 64px;
+}
+
+#kontakt-heading, .kontakt-links {
+    color: #716b73;
+    margin: 0px;
+    padding-bottom: 82px;
+}
+
+.kontakt-links {
+    font-size: 16px;
+}
+
+
+
+/*correct spacing between the kontakt section links*/
+
+
+#map, #phone, #envelope {
+    margin-right: 15px;
+}
+
+.kontakt-wrapper-small {
+    position: relative;
+    right: 25px;
+    margin-bottom: 30px;
+}
+
+/*footer begins here*/
+
+footer {
+    background-color: #aa7f76;
+    width: 100%;
+    display: flex;
+    height: 64px;
+    align-items: center;
+}
+
+footer, a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+#footer-wrapper {
+    margin-left: 15px;
+}
+
+/*Animations*/
+#navbar a:hover {
+    background-color: #f3ebe7;
+    transition-property: background-color;
+    transition-duration: .3s;
+    border-radius: 10px;
+}
+
+
+
+/*Iphone Responsiveness*/
+@media only screen 
+    and (min-width: 376px) {
+        .hide-desktop {
+            display: none;
+        }
+    }
+
+@media only screen 
+    and (max-width: 375px) 
+     { 
+         .hide-mobile {
+            display: none;
+         }
+         #leistungen, i {
+             
+         }
+        #headshot-container {
+            display: none;
+        }
+
+        #paragraph-container {
+            margin: 32px 16px 0px 16px;
+            width: 100%;
+        }
+
+        #paragraph-container, p {
+            text-align: center;
+        }
+
+        footer, a {
+            padding: 0px;
+        }
+
+        .icon-container {
+            height: 100px;
+            width: 100px;
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

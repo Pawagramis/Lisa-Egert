@@ -41,19 +41,23 @@
                 <h2 id="leistungen-heading" class="section-heading">LEISTUNGEN</h2>
                 <div class="icon-groupcontainer">
                     <div class="icon-container">
-                        <i class="fas fa-camera fa-5x leistungen-icons"></i>
+                        <i class="fas fa-camera fa-5x leistungen-icons hide-mobile"></i>
+                        <i class="fas fa-camera fa-3x leistungen-icons hide-desktop"></i>
                     </div>
                     <div class="icon-container">
-                        <i class="fas fa-magic fa-5x leistungen-icons"></i>
+                        <i class="fas fa-magic fa-5x leistungen-icons hide-mobile"></i>
+                        <i class="fas fa-magic fa-3x leistungen-icons hide-desktop"></i>
                     </div>
                     <div class="icon-container">
-                        <i class="fas fa-book-open fa-5x leistungen-icons"></i>
+                        <i class="fas fa-book-open fa-5x leistungen-icons hide-mobile"></i>
+                        <i class="fas fa-book-open fa-3x leistungen-icons hide-desktop"></i>
                     </div>
                 </div>
                 <div class="icon-groupcontainer">
                     <p class="icon-underline">Fotografie</p>
-                    <p class="icon-underline" id="corporate-design-underline">Corporate Design</p>
-                    <p class="icon-underline">Print</p>
+                    <p class="icon-underline hide-mobile" id="corporate-design-underline">Corporate Design</p>
+                    <p class="icon-underline hide-desktop" id="corporate-design-underline">&nbsp;&nbsp;&nbsp;Corporate<br>&nbsp;&nbsp;&nbsp;Design</p>
+                    <p class="icon-underline">&nbsp;Print</p>
                 </div>
             </section>
             <section id="ueber-mich">
@@ -67,20 +71,30 @@
                     </div>
                 </div>
             </section>
-            <section id="Kontakt">
+            <section id="kontakt">
                 <h2 id="kontakt-heading" class="section-heading">Kontakt</h2>
-                <i class="fas fa-map-marker-alt"></i>                
-                <a href="https://www.google.de/maps/place/Neubrunnenstra%C3%9Fe+23,+55116+Mainz/@50.0030062,8.2609091,17z/data=!3m1!4b1!4m5!3m4!1s0x47bd96fd2f1e9289:0x76f38d1220fa39ca!8m2!3d50.0030028!4d8.2630978" target="_blank">Adresse</a>
-                <i class="fas fa-phone"></i>
-                <a href=tel:+4915140105532”>Telefon/Whatsapp</a>
-                <i class="fas fa-envelope"></i>
-                <a href=mailto:contact@lisaegert.com>Email</a>
+                <div id="kontakt-wrapper">
+                    <div class="kontakt-wrapper-small" id="adresse-wrapper">
+                        <i id="map" class="fas fa-map-marker-alt kontakt-icons"></i>                
+                        <a id="adresse" class="kontakt-links" href="https://www.google.de/maps/place/Neubrunnenstra%C3%9Fe+23,+55116+Mainz/@50.0030062,8.2609091,17z/data=!3m1!4b1!4m5!3m4!1s0x47bd96fd2f1e9289:0x76f38d1220fa39ca!8m2!3d50.0030028!4d8.2630978" target="_blank">Adresse</a>
+                    </div>  
+                    <div class="kontakt-wrapper-small" id="telefon-wrapper">
+                        <i id="phone" class="fas fa-phone kontakt-icons"></i>
+                        <a id="telefon" class="kontakt-links" href=tel:+4915140105532”>Telefon / Whatsapp</a>
+                    </div>
+                    <div class="kontakt-wrapper-small" id="email-wrapper">
+                        <i id="envelope" class="fas fa-envelope kontakt-icons"></i>
+                        <a id="email" class="kontakt-links" href=mailto:contact@lisaegert.com>Email</a>
+                    </div>
+                </div>
             </section>
         </main>
         <footer>
-            <a href="#">KONTAKT</a>
-            <a href="#">IMPRESSUM</a>
-            <a href="#">DATENSCHUTZ</a>
+            <div id="footer-wrapper">
+                <a href="#">KONTAKT</a>
+                <a href="#">IMPRESSUM</a>
+                <a href="#">DATENSCHUTZ</a>
+            </div>
         </footer>
     </body>
 </html>
