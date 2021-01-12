@@ -283,13 +283,44 @@ footer, a {
 
 @media only screen 
     and (max-width: 375px) 
-     { 
+     {      /*Started to hide some elements in mobile for better overview*/
          .hide-mobile {
             display: none;
          }
-         #leistungen, i {
-             
+
+         #logo h1 {
+             font-size: 31px;
+             margin-left: 0px;
          }
+
+         #logo h4 {
+             font-size: 14px;
+             margin-left: 0px;
+         }
+         
+         /*Portfolio Section now with only one picture instead of 6. Slideshow soon to be implemented*/ 
+         #bot-images {
+            justify-content: center;
+            height: 100%;
+         }
+
+         #portfolio-heading {
+             padding-bottom: 32px;
+             margin-top: 0px;
+         }
+         #portfolio-image-6 {
+            margin: 0px;
+            max-width: 70%;
+         }
+
+         /*Had to resize the icons and background circle*/
+
+         .icon-container {
+            height: 100px;
+            width: 100px;
+        }
+
+         /*Can't make it disappear with .hide-mobile Not sure why*/
         #headshot-container {
             display: none;
         }
@@ -303,15 +334,60 @@ footer, a {
             text-align: center;
         }
 
+        /*Icon and link in one line. Three lines beneath each other*/
+
+        #kontakt-wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #map, #phone, #envelope {
+            margin-left: 15px;
+        }
+
         footer, a {
             padding: 0px;
         }
 
-        .icon-container {
-            height: 100px;
-            width: 100px;
-        }
+        /*Burgermenu copied off of site. Don't know how it works*/
         
+        .#navbar {
+            display: none;
+        }
+
+        #navbar-wrapper {
+            height: 200px;
+        }
+
+        #navbar a.icon {
+            background-color: #ffffff;
+            display: block;
+            position: absolute;
+            right: 25px;
+            top: 40px;
+          }
+
+          /* Add a grey background color on mouse-over */
+        .#navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        #navbar ul {
+            display: none;
+            background-color: #ffffff;
+        }
+
+        #navbar li {
+           margin-right: 0px;
+           position: relative;
+           font-size: 18px;
+           top: 80px;
+           left: 30px;
+           margin-top: 15px;
+           text-align: end;
+        }
+  }
     }
 
 

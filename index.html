@@ -16,24 +16,29 @@
                     <h1>LISA EGERT</h1>
                     <h4>KOMMUNIKATIONSDESIGN</h4>
                 </div>
-                <ul>
+                <ul id="navbar-wrapper">
                     <li class="navbar-items"><a href="#">PORTFOLIO</a></li>
                     <li class="navbar-items"><a href="#">ÜBER MICH</a></li>
                     <li class="navbar-items"><a href="#">KONTAKT</a></li>
                 </ul>
+                <!--"Hamburger Menu toggle navigation links-->
+                <a href="javascript:void(0);" class="icon hide-desktop" onclick="myFunction()">
+                    <i class="fa fa-bars fa-2x"></i>
+                </a>
+                <script src="/js/main.js"></script>
             </nav>
         </header>
         <main>
             <section id="portfolio">
                 <h2 id="portfolio-heading" class="section-heading">PORTFOLIO</h2>
                 <div id="top-images">
-                    <img id="portfolio-image-1" class="portfolio-images" src="/images/BLACK-RECTANGLE.jpg" alt="#">
-                    <img id="portfolio-image-2" class="portfolio-images" src="/images/BLACK-RECTANGLE.jpg" alt="#">
-                    <img id="portfolio-image-3" class="portfolio-images" src="/images/BLACK-RECTANGLE.jpg" alt="#">
+                    <img id="portfolio-image-1" class="portfolio-images hide-mobile" src="/images/BLACK-RECTANGLE.jpg" alt="#">
+                    <img id="portfolio-image-2" class="portfolio-images hide-mobile" src="/images/BLACK-RECTANGLE.jpg" alt="#">
+                    <img id="portfolio-image-3" class="portfolio-images hide-mobile" src="/images/BLACK-RECTANGLE.jpg" alt="#">
                 </div>
                 <div id="bot-images">
-                    <img id="portfolio-image-4" class="portfolio-images" src="/images/BLACK-RECTANGLE.jpg" alt="#">
-                    <img id="portfolio-image-5" class="portfolio-images" src="/images/BLACK-RECTANGLE.jpg" alt="#">
+                    <img id="portfolio-image-4" class="portfolio-images hide-mobile" src="/images/BLACK-RECTANGLE.jpg" alt="#">
+                    <img id="portfolio-image-5" class="portfolio-images hide-mobile" src="/images/BLACK-RECTANGLE.jpg" alt="#">
                     <img id="portfolio-image-6" class="portfolio-images" src="/images/BLACK-RECTANGLE.jpg" alt="#">
                 </div>
             </section>
@@ -86,6 +91,7 @@
                         <i id="envelope" class="fas fa-envelope kontakt-icons"></i>
                         <a id="email" class="kontakt-links" href=mailto:contact@lisaegert.com>Email</a>
                     </div>
+                    
                 </div>
             </section>
         </main>
