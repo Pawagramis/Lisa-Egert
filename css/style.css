@@ -73,7 +73,7 @@ ul {
 #top-images, #bot-images {
     display: flex;
     padding: 0px 0px;
-    align-items: flex-start;
+    justify-content: center;
 }
 
 .portfolio-images {
@@ -95,27 +95,27 @@ ul {
 
 /*die richtigen Abstände bei den Portfolio Bildern mit margin. Vielleicht gibt es bessere Lösung*/
 #portfolio-image-1 {
-    margin: 0px 16px 16px 32px;
+    margin: 0px 1% 1% 2%;
 }
 
 #portfolio-image-2 {
-    margin: 0px 16px 16px 16px;
+    margin: 0px 1% 1% 1%;
 }
 
 #portfolio-image-3 {
-    margin: 0px 32px 16px 16px;
+    margin: 0px 2% 1% 1%;
 }
 
 #portfolio-image-4 {
-    margin: 16px 16px 0px 32px;
+    margin: 1% 1% 0px 2%;
 }
 
 #portfolio-image-5 {
-    margin: 16px 16px 0px 16px;
+    margin: 1% 1% 0px 1%;
 }
 
 #portfolio-image-6 {
-    margin: 16px 32px 0px 16px;
+    margin: 1% 2% 0px 1%;
 }
 
 /*Hier startet der Leistungen Abschnitt*/
@@ -275,14 +275,14 @@ footer, a {
 
 /*Iphone Responsiveness*/
 @media only screen 
-    and (min-width: 376px) {
+    and (min-width: 841px) {
         .hide-desktop {
             display: none;
         }
     }
 
 @media only screen 
-    and (max-width: 375px) 
+    and (max-width: 840px) 
      {      /*Started to hide some elements in mobile for better overview*/
          .hide-mobile {
             display: none;
@@ -357,6 +357,7 @@ footer, a {
 
         #navbar-wrapper {
             height: 200px;
+
         }
 
         #navbar a.icon {
@@ -366,12 +367,6 @@ footer, a {
             right: 25px;
             top: 40px;
           }
-
-          /* Add a grey background color on mouse-over */
-        .#navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
 
         #navbar ul {
             display: none;
@@ -386,6 +381,10 @@ footer, a {
            left: 30px;
            margin-top: 15px;
            text-align: end;
+        }
+
+        #navbar a {
+            padding: 6px;
         }
   }
     }
