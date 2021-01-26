@@ -17,13 +17,13 @@ ul {
     list-style-type: none;
 }
 
-#navbar h1{
+.navbar h1{
     font-size: 40px;
     color: #32353D;
     font-weight: normal;
 }
 
-#navbar h4, #navbar a {
+.navbar h4, .navbar a {
     font-size: 16px;
     color: #716B73;
     font-weight: lighter;
@@ -31,7 +31,7 @@ ul {
 
 /* Die Navbar, das Logo plus Untertitel und die navbar items sind jeweils einzelne flex container*/
 /* Das Logo und die Navbar Items sollen jeweils 50% der Navbar einnehmen */
-#navbar ul {
+.navbar ul {
     display: flex;
     justify-content: flex-end;
     width: 50%;
@@ -41,8 +41,9 @@ ul {
     align-items: center;
 }
 
-#navbar {
+.navbar {
     display: flex;
+    padding: 16px;
 }
 
 #logo {
@@ -58,8 +59,12 @@ ul {
     margin: 4px 0px 32px 38px;
 }
 
-#navbar, a {
+.navbar a {
     padding: 16px;
+}
+
+#home-link{
+    padding: 0px;
 }
 
 /*Portfolio Bereich startet hier*/
@@ -81,7 +86,7 @@ ul {
     max-width: 30%;
     padding: 0px;
 }
-/*Font nicht in 500 verfügbar.*/
+/*Font is not available in 500 weight*/
 .section-heading {
     text-align: center;
     font-weight: 600;
@@ -93,7 +98,7 @@ ul {
     color: #716b73;
 }
 
-/*die richtigen Abstände bei den Portfolio Bildern mit margin. Vielleicht gibt es bessere Lösung*/
+/*Trying the right distance from each other with margin. Maybe there is a better solution*/
 #portfolio-image-1 {
     margin: 0px 1% 1% 2%;
 }
@@ -264,12 +269,13 @@ footer, a {
 }
 
 /*Animations*/
-#navbar a:hover {
+.navbar-links:hover {
     background-color: #f3ebe7;
     transition-property: background-color;
     transition-duration: .3s;
     border-radius: 10px;
 }
+
 
 
 
@@ -351,16 +357,13 @@ footer, a {
 
         /*Burgermenu copied off of site. Don't know how it works*/
         
-        .#navbar {
-            display: none;
-        }
 
         #navbar-wrapper {
             height: 200px;
 
         }
 
-        #navbar a.icon {
+        .navbar .icon {
             background-color: #ffffff;
             display: block;
             position: absolute;
@@ -368,12 +371,12 @@ footer, a {
             top: 40px;
           }
 
-        #navbar ul {
+        .navbar ul {
             display: none;
             background-color: #ffffff;
         }
 
-        #navbar li {
+        .navbar li {
            margin-right: 0px;
            position: relative;
            font-size: 18px;
@@ -383,11 +386,53 @@ footer, a {
            text-align: end;
         }
 
-        #navbar a {
+        .navbar a {
             padding: 6px;
         }
   }
-    }
+    
+
+  /*portfolio.html starts here*/
+
+  /*Header is the same as in index.html*/
+
+  /*Portfolio part with images starts here*/
+
+figure {
+    margin: 0% 2% 0% 2%;
+}
+  
+#picture-wrapper {
+    background-color:#f3ebe7;
+}
+
+.line-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 24px 32px 0px 32px;
+}
+
+.portfolio-images-complete {
+    width: 100%;
+    height: 70%;
+}
+
+.portfolio-images-complete-wrapper {
+    width: 30%;
+}
+
+.caption {
+    font-size: 16px;
+    color: #716B73;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.caption-hashtag {
+    font-size: 13px;
+    color: #716B73;
+    padding-top: 12px;
+}
 
 
 
