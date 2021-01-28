@@ -123,6 +123,20 @@ ul {
     margin: 1% 2% 0px 1%;
 }
 
+#mehr-anzeigen-wrapper{
+    width: 100%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+#mehr-anzeigen {
+    color: #716b73;
+    padding-right: 32px;
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
 /*Hier startet der Leistungen Abschnitt*/
 
 #leistungen {
@@ -279,14 +293,31 @@ footer, a {
 
 
 
-/*Iphone Responsiveness*/
+/*Responsiveness PART Desktop*/
 @media only screen 
     and (min-width: 841px) {
         .hide-desktop {
             display: none;
         }
-    }
 
+        /*the size of the portfolio images show only on desktop*/
+        .portfolio-images-complete-wrapper {
+            width: 30%;
+            position: relative;
+        }
+
+        .line-wrapper {
+            display: flex;
+            justify-content: center;
+            padding: 24px 32px 0px 32px;
+        }
+
+        .portfolio-images-complete-wrapper:hover .portfolio-hover-overlay{
+            opacity: 0.7;
+        }
+
+    }
+/*Responsiveness Tablet and smaller*/
 @media only screen 
     and (max-width: 840px) 
      {      /*Started to hide some elements in mobile for better overview*/
@@ -389,6 +420,26 @@ footer, a {
         .navbar a {
             padding: 6px;
         }
+
+        /*Portfolio Responsive part*/
+
+        .line-wrapper {
+            flex-direction: column;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+
+        .portfolio-images-complete-wrapper{
+            margin: 0px;
+        }
+
+        .caption-hashtag{
+            padding-bottom: 16px;
+        }
+
+        .portfolio-hover-overlay{
+            display: none!important;
+        }
   }
     
 
@@ -406,20 +457,13 @@ figure {
     background-color:#f3ebe7;
 }
 
-.line-wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 24px 32px 0px 32px;
-}
+
 
 .portfolio-images-complete {
     width: 100%;
     height: 70%;
 }
 
-.portfolio-images-complete-wrapper {
-    width: 30%;
-}
 
 .caption {
     font-size: 16px;
@@ -434,6 +478,25 @@ figure {
     padding-top: 12px;
 }
 
+
+
+.portfolio-hover-overlay{
+
+    background: #f3ebe8;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    height: 70%;
+    color: #716b73;
+}
+    
+  
 
 
 
